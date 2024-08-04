@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mousa | موقع موسى الشخصي</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- معرض أعمالي -->
+    <section id="portfolio">
+        <h2>معرض أعمالي</h2>
+        <div class="portfolio-container">
+            <!-- ستضاف العناصر الديناميكية هنا -->
+            <div class="portfolio-item">
+                <img src="project1.jpg" alt="عمل 1">
+                <p>وصف العمل 1</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="project2.jpg" alt="عمل 2">
+                <p>وصف العمل 2</p>
+            </div>
+            <!-- المزيد من العناصر -->
+        </div>
+    </section>
+
+    <!-- خدماتي -->
+    <section id="services">
+        <h2>خدماتي</h2>
+        <div class="service" onclick="window.location.href='content-writing.html'">
+            <h3>كتابة المحتوى</h3>
+        </div>
+        <div class="service" onclick="window.location.href='graphic-design.html'">
+            <h3>تصميم الجرافيك</h3>
+        </div>
+        <div class="service" onclick="window.location.href='web-development.html'">
+            <h3>تصميم وإنشاء المواقع</h3>
+        </div>
+        <div class="service" onclick="window.location.href='digital-marketing.html'">
+            <h3>تسويق إلكتروني</h3>
+        </div>
+    </section>
+
+    <!-- أعمالي -->
+    <section id="projects">
+        <h2>أعمالي</h2>
+        <div class="project">
+            <h3>اسم العمل</h3>
+            <p>عنوان المشروع</p>
+            <p>تفاصيل المشروع</p>
+            <img src="project-image.jpg" alt="صورة المشروع">
+        </div>
+        <!-- إضافة المزيد من المشاريع بنفس التنسيق -->
+    </section>
+
+    <!-- دردشة -->
+    <div id="chat-icon" onclick="openChat()">💬 دردشة</div>
+    <div id="chat-box">
+        <!-- هنا يمكن إضافة الشات باستخدام خدمات مثل Firebase أو Socket.io -->
+    </div>
+
+    <!-- تحديات -->
+    <section id="challenges">
+        <h2>تحديات</h2>
+        <button onclick="window.location.href='challenges.html'">الذهاب إلى صفحة التحديات</button>
+    </section>
+
+    <!-- اتصل بي -->
+    <section id="contact">
+        <h2>اتصل بي</h2>
+        <form id="contact-form">
+            <input type="text" name="name" placeholder="اسمك" required>
+            <input type="email" name="email" placeholder="بريدك الإلكتروني" required>
+            <input type="text" name="phone" placeholder="رقم الهاتف" required>
+            <textarea name="message" placeholder="رسالتك" required></textarea>
+            <button type="submit">إرسال</button>
+        </form>
+    </section>
+
+    <!-- تذييل -->
+    <footer>
+        <p>تم تصميمه بواسطة موسى</p>
+        <div class="social-media">
+            <a href="https://t.me/yourusername" target="_blank">تيليجرام</a>
+            <a href="https://facebook.com/yourusername" target="_blank">فيسبوك</a>
+            <a href="https://instagram.com/yourusername" target="_blank">إنستغرام</a>
+            <a href="https://wattpad.com/yourusername" target="_blank">واتباد</a>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
